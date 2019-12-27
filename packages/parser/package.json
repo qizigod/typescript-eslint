@@ -1,6 +1,6 @@
 {
-  "name": "@typescript-eslint/parser",
-  "version": "2.13.0",
+  "name": "@ies/typescript-eslint-parser",
+  "version": "0.0.1",
   "description": "An ESLint custom parser which leverages TypeScript ESTree",
   "main": "dist/parser.js",
   "types": "dist/parser.d.ts",
@@ -14,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/typescript-eslint/typescript-eslint.git",
+    "url": "https://github.com/qizigod/typescript-eslint.git",
     "directory": "packages/parser"
   },
   "bugs": {
-    "url": "https://github.com/typescript-eslint/typescript-eslint/issues"
+    "url": "https://github.com/qizigod/typescript-eslint/issues"
   },
   "license": "BSD-2-Clause",
   "keywords": [

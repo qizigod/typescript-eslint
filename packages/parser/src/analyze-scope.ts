@@ -272,15 +272,13 @@ class Referencer extends TSESLintScope.Referencer<ScopeManager> {
 
   /**
    * Override.
-   * Don't create the reference object in the type mode.
+   * Create the reference object in the type mode.
    * @param node The Identifier node to visit.
    */
   Identifier(node: TSESTree.Identifier): void {
     this.visitDecorators(node.decorators);
-
-    if (!this.typeMode) {
-      super.Identifier(node);
-    }
+    // 对TS类型也创建Reference
+    super.Identifier(node);
 
     this.visit(node.typeAnnotation);
   }
